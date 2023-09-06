@@ -8,7 +8,7 @@ public class Calculator {
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
     BinaryOperator<Integer> devide = (x, y) -> {
         if (y == 0) {
-            throw new ArithmeticException();
+            throw new IllegalArgumentException();
         } else {
             return x / y ;
         }

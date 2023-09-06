@@ -11,7 +11,7 @@ public class Main {
         try {
             int c = calc.devide.apply(a, b);
             System.out.println("Переменная c = " + c);
-        } catch ( ArithmeticException e) {
+        } catch (IllegalArgumentException e) {
             System.out.println("Невозможно рассчитать переменную с (Деление на ноль)!");
         }
     }
